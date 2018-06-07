@@ -1,0 +1,192 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product__item {
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+
+.product__item--link {
+  color: #171919;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  margin: auto;
+  background: #ffffff;
+  padding: 0 0 1rem 0;
+}
+
+.product__item__info {
+  max-width: 350px;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.product__item__size {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.product__item__info--successCart,
+.product__item__info--errorSize {
+  font-size: 1.3rem;
+  color: #006400;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 18px;
+  display: none;
+  transition: 0.1s all;
+}
+
+.product__item__info--errorSize {
+  color: #cf3838;
+}
+
+.product__item__info--ok {
+  display: block;
+}
+
+.product__item__size p {
+  font-size: 1.4rem;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px #171919 solid;
+  color: #171919;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.1s all;
+}
+
+.product__item__size p.active {
+  color: #ffffff;
+  background-color: #171919;
+}
+
+.product__item__size p:hover {
+  color: #ffffff;
+  background-color: #171919;
+}
+
+.product__item--image {
+  position: relative;
+  width: 100%;
+}
+
+.product__item--image img::before {
+  background-image: url(https://amaro.com/webapp/media/background-image.png);
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.product__item--image img {
+  width: 100%;
+}
+
+.product__item--name h1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 2rem 0 1rem 0;
+  padding: 0 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.product__item--price p {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.6;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.product__item--price p span:first-child {
+  padding-right: 15px;
+}
+
+.product__item--price p span:last-child {
+  color: #999999;
+}
+
+.product__item--price--discount p:last-child span:first-child {
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.product__item--price--discount p:last-child span:last-child {
+  color: #cf3838;
+  font-weight: 600;
+}
+
+.product__item__shop {
+}
+
+.product__item__shop button {
+  max-width: 250px;
+  width: 90%;
+  margin: 20px auto 0 auto;
+  display: block;
+  background-color: #171919;
+  border: 1px #171919 solid;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 1.4rem 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.05s all;
+}
+
+.product__item__shop button:hover,
+.product__item__shop button:active {
+  background-color: #d0d0d0;
+  border: 1px #171919 solid;
+}
+
+@media screen and (min-width: 1024px) {
+  .product__item {
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .product__item {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product__item {
+    width: 49%;
+    padding: 0px;
+  }
+
+  .product__item--price p span:first-child {
+    padding-right: 0px;
+  }
+}

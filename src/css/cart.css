@@ -1,0 +1,146 @@
+.cart {
+  width: 95%;
+  margin: auto;
+  padding: 0;
+}
+
+.cart__item {
+  max-width: 600px;
+  width: 90%;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  margin: auto auto 3rem auto;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  position: relative;
+}
+
+.cart__item__delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  margin: 0;
+  vertical-align: middle;
+  padding: 10px;
+  line-height: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.cart__item__delete:hover {
+  background-color: rgba(0, 0, 0);
+  color: #fff;
+}
+
+.cart__item__image {
+  width: 57%;
+}
+
+.cart__item__image img {
+  width: 95%;
+  display: block;
+  margin: 0;
+}
+
+.cart__item__info {
+  width: 43%;
+}
+
+.cart__item__info h1 {
+  margin: 10px 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.cart__item__info h1 span {
+}
+
+.cart__item__total {
+  max-width: 600px;
+  width: 90%;
+  text-align: right;
+  margin: auto;
+}
+
+.cart__item__message {
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.cart__item__total h2,
+.cart__item__message h2 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.cart__item__total h2 span {
+}
+
+.cart__item__info p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  line-height: 2;
+}
+.cart__item__info p:nth-child(1) {
+}
+.cart__item__info p:nth-child(2) {
+}
+.cart__item__info p:nth-child(3) {
+  font-size: 0rem;
+  color: transparent;
+  visibility: hidden;
+  display: none;
+}
+.cart__item__info p:nth-child(4) {
+}
+
+.cart__item__info p span[data-type] {
+  background-color: transparent;
+  padding: 2px 8px;
+  font-size: 2rem;
+  vertical-align: middle;
+  border: 1px #171919 solid;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.cart__item__info p span[data-type]:hover {
+  background-color: #171919;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 420px) {
+  .cart__item {
+    padding: 0 0 1rem 0;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 0px auto 30px auto;
+  }
+
+  .cart__item__image {
+    width: 100%;
+  }
+
+  .cart__item__image img {
+    width: 100%;
+  }
+
+  .cart__item__info {
+    width: 90%;
+    margin-top: 1rem;
+  }
+}
