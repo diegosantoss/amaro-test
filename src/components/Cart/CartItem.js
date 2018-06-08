@@ -86,7 +86,7 @@ export default class CartItem extends Component {
     const returnFullPrice = `R$ ${fullPrice.toFixed(2)}`;
     item.total_price = returnFullPrice.replace(".", ",");
 
-    return item.total_price;
+    return item.price;
   }
 
   renderTotalPrice(item) {

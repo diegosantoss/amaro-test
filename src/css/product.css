@@ -7,7 +7,8 @@
 
 .product__item {
   box-sizing: border-box;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  max-width: 350px;
 }
 
 .product__item--link {
@@ -168,7 +169,13 @@
   border: 1px #171919 solid;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
+  .product__item {
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .product__item {
     width: 24%;
   }

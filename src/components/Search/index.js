@@ -34,11 +34,8 @@ export default class Search extends Component {
         </div>
       );
     } else {
-      console.log("true");
-      console.log(allProducts.length);
+      return <Product products={allProducts} />;
     }
-
-    return <Product products={allProducts} />;
   };
 
   render() {
