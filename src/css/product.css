@@ -164,9 +164,11 @@
 }
 
 .product__item__shop button:hover,
-.product__item__shop button:active {
+.product__item__shop button:active,
+.product__item__shop button:focus,
+.product__item__shop button:visited {
   background-color: #d0d0d0;
-  border: 1px #171919 solid;
+  border: 1px #d0d0d0 solid;
 }
 
 @media screen and (min-width: 1200px) {

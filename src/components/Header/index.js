@@ -8,18 +8,20 @@ export default class Header extends Component {
   render() {
     return (
       <header>
-        <div className="header__logo">
-          <Link to="/">
-            <img
-              src="https://d2odcms9up7saa.cloudfront.net/appdata/uploads/cms/logo-small_20170706004207.png"
-              alt="AMARO"
-            />
-          </Link>
+        <div className="header__content">
+          <div className="header__logo">
+            <Link to="/">
+              <img
+                src="https://d2odcms9up7saa.cloudfront.net/appdata/uploads/cms/logo-small_20170706004207.png"
+                alt="AMARO"
+              />
+            </Link>
+          </div>
+          <nav className="header__nav">
+            <Search />
+            <Cart cart={this.props.cart} />
+          </nav>
         </div>
-        <nav className="header__nav">
-          <Search />
-          <Cart cart={this.props.cart} />
-        </nav>
       </header>
     );
   }
