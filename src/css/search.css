@@ -2,7 +2,15 @@
   max-width: 600px;
   width: 90%;
   text-align: center;
+  height: 75vh;
   margin: auto;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
 }
 
 .search__message h2 {
