@@ -79,8 +79,6 @@
 }
 
 .cart__item__message {
-  max-width: 600px;
-  width: 90%;
   text-align: center;
   margin: auto;
 }
