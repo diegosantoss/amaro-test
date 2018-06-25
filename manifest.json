@@ -1,6 +1,6 @@
 {
-  "name": "AMARO test | Front End Developer",
-  "short_name": "AMARO",
+  "name": "Name Diego",
+  "short_name": "SnDiego",
   "theme_color": "#005f97",
   "background_color": "#005f97",
   "display": "standalone",
@@ -10,8 +10,8 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "https://amaro.com/assets/shop/images/favicon/favicon-16x16.png",
-      "sizes": "512x512",
+      "src": "/images/favicon.png",
+      "sizes": "100x100",
       "type": "image/png"
     }
   ]
