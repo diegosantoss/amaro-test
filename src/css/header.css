@@ -1,5 +1,9 @@
 header {
-  height: 10vh;
+  height: 110px;
+  position: fixed;
+  z-index: 9;
+  background: #f0f0f0;
+  width: 100%;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -105,10 +109,6 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    height: 12vh;
-  }
-
   .header__content {
     flex-direction: column;
     align-items: center;

@@ -1,15 +1,18 @@
 {
-  "short_name": "AMARO",
-  "name": "AMARO test | Front End Developer",
+  "name": "Name Diego",
+  "short_name": "SnDiego",
+  "theme_color": "#005f97",
+  "background_color": "#005f97",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/?utm_source=homescreen",
+  "lang": "pt-BR",
+  "orientation": "any",
   "icons": [
     {
-      "src": "https://amaro.com/assets/shop/images/favicon/favicon-16x16.png",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/images/favicon.png",
+      "sizes": "100x100",
+      "type": "image/png"
     }
-  ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
