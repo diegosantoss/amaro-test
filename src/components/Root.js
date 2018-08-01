@@ -30,7 +30,6 @@ export default class Root extends Component {
 
   render() {
     const { products, cart } = this.state;
-    console.log(cart);
     return (
       <React.Fragment>
         <Header cart={cart} />
