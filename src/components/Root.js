@@ -30,15 +30,16 @@ export default class Root extends Component {
 
   render() {
     const { products, cart } = this.state;
+    console.log(cart);
     return (
-      <section>
+      <React.Fragment>
         <Header cart={cart} />
         <Main
           products={products}
           ClicktoChangeStateProduct={this.ClicktoChangeStateProduct}
           cart={cart}
         />
-      </section>
+      </React.Fragment>
     );
   }
 }
