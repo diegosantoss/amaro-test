@@ -2,13 +2,9 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 export default class Search extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      link: ""
-    };
-  }
+  state = {
+    link: ""
+  };
 
   componentDidMount() {
     const $input = document.querySelector("input");

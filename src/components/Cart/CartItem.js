@@ -153,10 +153,10 @@ export default class CartItem extends Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         {this.renderCartItem()}
         {this.renderTotalPrice()}
-      </div>
+      </React.Fragment>
     );
   }
 }

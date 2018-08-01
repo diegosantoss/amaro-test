@@ -1,14 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Product from "../Product";
 
-export default class Home extends Component {
-  render() {
-    return (
-      <Product
-        ClicktoChangeStateProduct={this.props.ClicktoChangeStateProduct}
-        products={this.props.products}
-      />
-    );
-  }
-}
+export default props => {
+  return (
+    <Product
+      ClicktoChangeStateProduct={props.ClicktoChangeStateProduct}
+      products={props.products}
+    />
+  );
+};
